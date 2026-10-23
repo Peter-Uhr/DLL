@@ -3,7 +3,7 @@
 https://keanw.com/2012/12/hooking-into-autocad-copy-paste-via-ctrl-c-and-v-using-net.html
 
 Step 1: Replace Your C# Code
-
+```
 using Autodesk.AutoCAD.ApplicationServices.Core;
 using Autodesk.AutoCAD.Runtime;
 using System;
@@ -78,12 +78,12 @@ namespace AutoCADShortcutManager
         }
     }
 }
-
+```
 
 
 
 Step 2: One-Time Manual Setup & Cleaning
-
+```
 To purge the existing duplicates and link the new, stable code:
 1. Open AutoCAD, type CUI and press Enter.
 2. In the Command List panel (bottom left), search for your ghost items (DynamicPaste, DynamicCopy, etc.). Right-click each duplicate entry and select Delete.
@@ -94,3 +94,4 @@ To purge the existing duplicates and link the new, stable code:
 5. Drag your newly created commands from the bottom list and drop them into the Shortcut Keys folder.
 6. Select your new commands inside the folder, look at the Properties panel on the right, click Key(s), and assign CTRL+V and CTRL+C respectively.
 7. Click Apply and OK.
+```
