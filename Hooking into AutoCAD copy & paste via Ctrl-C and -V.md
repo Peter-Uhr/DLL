@@ -27,8 +27,7 @@ namespace AutoCADShortcutManager
             if (doc != null)
             {
                 doc.Editor.WriteMessage("\n[PPO] Shortcuts swapped to native AutoCAD paste defaults.");
-                // FORCE IMMEDIATE RUN: Automatically trigger the paste route right after swapping
-                doc.SendStringToExecute("_MY_PASTE_ROUTE ", true, false, false);
+                
             }
         }
 
@@ -40,8 +39,7 @@ namespace AutoCADShortcutManager
             if (doc != null)
             {
                 doc.Editor.WriteMessage("\n[PPN] Shortcuts successfully swapped to custom tools.");
-                // FORCE IMMEDIATE RUN: Automatically trigger the paste route right after swapping
-                doc.SendStringToExecute("_MY_PASTE_ROUTE ", true, false, false);
+                
             }
         }
 
