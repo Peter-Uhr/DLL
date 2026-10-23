@@ -11,6 +11,20 @@
 3.  _P;; – Automatically inputs P for Previous selection, which instantly grabs all<br /> the items you just selected, and hits Enter.
 4.  for Point 1 (Base point) and Point 2 (First copy destination)
 
+**LISP Method**
+```
+(defun C:a (/ )
+    (setq old_orthomode (getvar "orthomode"))
+    '(setvar "orthomode" 1)
+    (setq a1 (getpoint "\n1st point :"))
+    (setq a2 (getpoint "\n2nd point :" a1))
+    (setq a (distance a1 a2))
+    (princ (strcat "\nDistance is " (rtos a 2 1)))
+    (setvar "orthomode" old_orthomode)
+    (princ)
+) ;_ end of defun
+(defun c:CP0 () (command "_.select" pause) (command "._copy" "_P" "" a1 a2))
+```
 ### abbott-cancel
 ```
 ^C^C^C(sssetfirst nil)
