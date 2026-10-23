@@ -25,15 +25,15 @@
 ) ;_ end of defun
 (defun c:CP0 () (command "_.select" pause) (command "._copy" "_P" "" a1 a2))
 ```
-### abbott-cancel
+### abbott-cancel - Esc
 ```
 ^C^C^C(sssetfirst nil)
 ```
-### abbott-mee
+### abbott-mee - F4
 ```
 m2p
 ```
-### abbott-TK
+### abbott-TK - F1
 ```
 tk
 ```
