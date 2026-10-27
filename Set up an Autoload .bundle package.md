@@ -25,9 +25,14 @@ C:\ProgramData\Autodesk\ApplicationPlugins\MyAutoCadPlugin.bundle\
   </Components>
 </ApplicationPackage>
 ```
+
+<p>• ProductCode: Replace the dummy GUID inside the brackets {...} with a fresh, unique GUID. <br />You can generate one in Visual Studio by going to Tools > Create GUID (use the Registry format).<p>
+<p>• ModuleName: Ensure this points accurately to your main startup DLL relative to the root <br />bundle folder. (Keep ./Contents/ at the beginning).<p>
+<p>• LoadOnAutoCADStartup="True": This tells AutoCAD to automatically execute and load your <br />plugin as soon as the software opens.<p>
+
 ## Step 3: Copy Your Built DLLs
 
-Build your solution in Visual Studio. Take your freshly compiled main plugin DLL and your Blocks.dll out of your Visual Studio bin/Debug or bin/Release folder, and paste them both directly into the Contents subfolder you created in Step 1.
+Build your solution in Visual Studio. Take your freshly compiled main plugin DLL and your<br /> Blocks.dll out of your Visual Studio bin/Debug or bin/Release folder, and paste them both directly into the Contents subfolder you created in Step 1.
 
 ## Step 4: Deploy and Test
 
