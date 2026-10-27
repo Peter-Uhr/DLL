@@ -1,11 +1,12 @@
 ## Step 1: Create the Folder Structure
 
+```
 C:\ProgramData\Autodesk\ApplicationPlugins\MyAutoCadPlugin.bundle\
 ├── PackageContents.xml
 └── Contents\
     ├── YourMainPlugin.dll
     └── Blocks.dll
-    
+ ```   
 ## Step 2: Create the PackageContents.xml File
 
 ```
