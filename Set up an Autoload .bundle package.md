@@ -18,7 +18,7 @@ C:\ProgramData\Autodesk\ApplicationPlugins\MyAutoCadPlugin.bundle\
     
     <!-- Component Entry pointing to your startup class library -->
     <ComponentEntry AppName="MyAutoCadPlugin" 
-                    ModuleName="Contents\**YourMainPlugin.dll**" 
+                    ModuleName="Contents\YourMainPlugin.dll" 
                     AppDescription="Main entry point for the plugin" 
                     LoadOnAutoCADStartup="True">
     </ComponentEntry>
